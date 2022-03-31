@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webserve Oxymeter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="asset/logo.png"></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Oxymeter Result</h1>
+            <p>Dengan adanya alat kami, kami berharap pengguna akan selalu mengecek kesehatannya dan 
+                melakukan konsultasi kepada dokter <br>agar mendapatkan penanganan lebih awal. Kami harapkan
+                agar pengguna mengisi nama dan menekan start untuk menunjukkan hasil dari alat kami.
+            </p>
+            <a href="result.html" class="hero-btn">Start</a>
+        </div>
+    </section>
+
+<!--- Fungsi dari Oxymeter -->
+<section class="detection">
+    <h1>
+        Apa saja yang dapat di deteksi oleh Oxymeter? 
+    </h1><br>
+    <p> Pertama-tama mari mengenal apa itu oxymeter. Oxymeter adalah alat yang mampu mendeteksi tingkat oksigen
+        didalam darah manusia tanpa menimbulkan rasa sakit. Jadi oxymeter 
+        dapat memperlihatkan seberapa efisenkah oksigen yang dikirn ke bagian tubuh anda yang paling jauh
+        , seperti lengan dan kaki. Dikondisi saat ini dimana covid-19 masih belum memiliki penawar
+        kita perlu melakukan pencegahan dengan memeriksan oksigen dalam tubuh kita. Selain coivd-19, masih banyak lagi penyakit 
+        yang dapat kamu ketahui dengan hanya melihat tingkat oksigen dalam darah mu loh.
+    </p><br><br><br>
+</section>
+
+<!-- Footer-->
+<footer class="footer">
+    <div class="container"><div class="small text-center text-muted">Project A1 KMMI</div></div>
+</footer>
+
+
+<!----Toggle Menu with Javascript---->
+<script>
+    var navLink = document.getElementById("navLink");
+    function showMenu() {
+        navLink.style.right = "0";
+    }
+    function hideMenu() {
+        navLink.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
